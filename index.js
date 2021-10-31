@@ -73,6 +73,10 @@ app.get('/', (req, res) => {
     res.send('Running Sylhet Travel');
 });
 
+app.get('/hello', (req, res) => {
+    res.send('hello heroku! updated here.')
+})
+
 app.listen(port, () => {
     console.log('running Travel Sylhet on port', port);
 })
